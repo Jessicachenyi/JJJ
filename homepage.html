@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+        body,
+        html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            background-image: url("/image/homepage.jpg.webp");
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">HOME</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block w3-black">About</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#where" class="w3-button w3-block w3-black">Order</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag">Open from 8:30am to 7pm</span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white" style="font-size:90px">Cozy<br>Kitchen</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-text-white">1st Floor,Warwick Art Center</span>
+        </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- About Container -->
+        <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT COZY KITCHEN</span></h5>
+                <p>The cozy kitchen was set up by a few more Asian students who used to study at Warwick. In Asian
+                    culture, there is nothing like a steaming cup of soymilk or a bowl of congee to wake you up for the
+                    day. We wanted to not only give our Asian students a home away from home, but also to introduce
+                    students from all over the world to the cuisine of Asia, and to introduce them to the cuisine of the
+                    Orient!</p>
+                <p>We will be serving freshly squeezed soy milk for breakfast as well as meat and vegetarian porridge.
+                    Simple bean paste buns and milky buns will be provided on top of the food. For lunch and dinner we
+                    will provide 2 meat and 1 veggie boxed lunches that are heated and ready to eat depending on the
+                    ingredients of the day. There is no need for extra waiting.</p>
+                <div class="w3-panel w3-leftbar w3-light-grey">
+                    <p><i>"Food is culture, and we need to listen to it."</i></p>
+                </div>
+                <img src="/image/About.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+                <p><strong>Opening hours:</strong> Monday-Friday from 8:30am to 7pm.</p>
+                <p><strong>Address:</strong>1st Floor,Warwick Art Center</p>
+            </div>
+        </div>
+
+        <!-- Menu Container -->
+        <div class="w3-container" id="menu">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+                        <div class="w3-col s6 tablink">Eat</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                        <div class="w3-col s6 tablink">Drink</div>
+                    </a>
+                </div>
+
+                <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Bun(Pork/Chicken/Beef/Mushrooms/Vegetables)</h5>
+                    <p class="w3-text-grey">Meat £1.5/pc; Vegan £1.2/pc</p><br>
+
+                    <h5>Deep Fried Dough Stick</h5>
+                    <p class="w3-text-grey">£1.5/pc</p><br>
+
+                    <h5>Soup Dumpling</h5>
+                    <p class="w3-text-grey">£3.2/3pcs</p><br>
+
+                    <h5>Tea Egg</h5>
+                    <p class="w3-text-grey">80p/pc</p><br>
+
+                    <h5>Congee/Rice Porridge</h5>
+                    <p class="w3-text-grey">£3.8/bowl</p>
+                </div>
+
+                <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Soy Milk</h5>
+                    <p class="w3-text-grey">£2.50</p><br>
+
+                    <h5>Still/Mineral Water</h5>
+                    <p class="w3-text-grey">99p</p><br>
+
+                    <h5>Cola</h5>
+                    <p class="w3-text-grey">£1.2</p><br>
+
+                    <h5>Hot Tea</h5>
+                    <p class="w3-text-grey">£1.5</p><br>
+
+                    <h5>Hot Milk</h5>
+                    <p class="w3-text-grey">99p</p>
+                </div>
+                <img src="/image/menu.png" style="width:100%;max-width:1000px;margin-top:32px;">
+            </div>
+        </div>
+
+        <!-- Contact/Area Container -->
+        <div class="w3-container" id="order" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ORDER</span></h5>
+                <p>Order from here.</p>
+                <img src="/image/Order.jpg.webp" class="w3-image" style="width:100%">
+                <p><span class="w3-tag">Important Info!</span> If you want to save time waiting, we recommend ordering
+                    online and then coming directly to pick up your meal. We will update this page with the real-time
+                    queuing status of the orders in front of you to let you know how long you still have to wait.</p>
+                <p><strong>Queue Time:</strong> Currently there are "" orders.</p>
+                <p><strong>Estimated waiting time:</strong> 20 mins</p>
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required
+                            name="Name"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people"
+                            required name="People"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local"
+                            placeholder="Date and Time to Pick Up" required name="date" value="2024-01-29T09:00"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text"
+                            placeholder="Special requirements\Allergies" required name="Message"></p>
+                    <p><button class="w3-button w3-black" type="submit">Place Order </button></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">Warwick 2024</a></p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
